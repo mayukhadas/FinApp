@@ -1,0 +1,92 @@
+[
+    {
+        "Questions": "You\u2019re looking at a student loan offer with a low-interest rate, but it\u2019s from a private lender. What do you do?",
+        "AnswerChoices": "Apply for the loan immediately because the low interest seems like a good deal.^Research federal student loans first, as they offer more protections.^Talk to your parents or a financial advisor about the loan before deciding.",
+        "AnswerPointValue": "6^10^10",
+        "AnswerExplanation": "Private student loans can have variable interest rates, which means your payments could increase over time. Make sure to research the lender and compare their loan terms before applying.^Federal student loans often offer better terms, such as fixed interest rates and flexible repayment options. It's wise to explore federal options before turning to private loans.^Consulting an adult or financial expert is a great idea! They can help you understand the full implications of borrowing from a private lender."
+    },
+    {
+        "Questions": "You need a car for your commute to college, and you\u2019re thinking about applying for an auto loan. What\u2019s your first step?",
+        "AnswerChoices": "Apply for an auto loan right away, you need the car immediately.^Check your credit score and determine what type of loan you can afford.^Save up for a few months before applying for an auto loan.",
+        "AnswerPointValue": "4^10^10",
+        "AnswerExplanation": "While an auto loan might seem urgent, it\u2019s crucial to shop around first. Compare interest rates and terms from different lenders to find the best deal.^Great move! Knowing your credit score and what loans you qualify for will help you avoid applying for loans you can't repay and ensure you're getting a fair rate.^It\u2019s always best to save for a down payment, which will reduce your loan amount and lower your monthly payments. A larger down payment can also help you qualify for a better rate."
+    },
+    {
+        "Questions": "You\u2019re considering a payday loan to cover a small emergency expense, but you\u2019re unsure. What do you do?",
+        "AnswerChoices": "Apply for the payday loan because you need money right now.^Look for other options like borrowing from family or a personal loan with a lower interest rate.^Wait for your paycheck to cover the expense and avoid borrowing.",
+        "AnswerPointValue": "0^7^10",
+        "AnswerExplanation": "Payday loans can be very costly due to high fees and interest rates. If you can avoid them, it\u2019s better to explore alternatives like personal loans from a bank or borrowing from a trusted friend or family member.^This is a much safer option! Personal loans usually offer lower rates than payday loans and have more reasonable repayment terms.^Waiting for your paycheck is a smart decision. Avoiding borrowing helps you keep your financial situation stable without accumulating high-interest debt."
+    },
+    {
+        "Questions": "You\u2019re comparing a student loan from a private lender and a federal student loan. What factors should you consider most?",
+        "AnswerChoices": "The interest rate is the most important factor, so go for the loan with the lowest rate.^Federal student loans might offer better repayment options and protections, so prioritize them.^Focus on how quickly you can pay off the loan.",
+        "AnswerPointValue": "0^10^5",
+        "AnswerExplanation": "While interest rates are important, you should also consider the repayment terms, deferment options, and forgiveness programs available with federal loans. Federal loans often have more favorable terms.^Exactly! Federal student loans typically have fixed interest rates and provide more flexible repayment options, which can be crucial when you're struggling financially after graduation.^While repayment speed is important, the loan\u2019s interest rate and flexibility will affect your ability to pay it off efficiently in the long run."
+    },
+    {
+        "Questions": "You\u2019re considering applying for a line of credit to cover some college-related expenses. What do you do?",
+        "AnswerChoices": "Apply for a line of credit with a high limit so you can cover everything you need.^Use the line of credit for emergencies only and make sure to pay it off in full each month.^Wait until you have enough saved up, so you don\u2019t need to borrow.",
+        "AnswerPointValue": "0^8^10",
+        "AnswerExplanation": "It\u2019s tempting to apply for a high limit, but high credit limits can lead to overspending. It\u2019s better to request a line of credit based on your actual needs and ability to repay.^This is a wise decision. Lines of credit can be helpful for emergencies, but they come with higher interest rates if not paid off quickly. Responsible use ensures you don\u2019t accumulate debt.^It\u2019s always ideal to save up for big expenses to avoid borrowing. Saving money gives you more control over your financial future."
+    },
+    {
+        "Questions": "Jake wants to start his business, but he doesn\u2019t have enough capital. What\u2019s the first step?",
+        "AnswerChoices": "Apply for a payday loan to get quick cash.^Explore small business loans or grants that might be available for startups.^Ask family or friends for a loan to help start the business.",
+        "AnswerPointValue": "0^10^5",
+        "AnswerExplanation": "Payday loans come with very high interest rates and fees, making them a poor choice for financing a business. It\u2019s better to look for other, more sustainable options.^Small business loans or grants are a better option. These loans are designed to help new businesses grow with more reasonable terms and lower interest rates.^Borrowing from friends or family can be a good option, but it\u2019s important to be clear about the terms and repayment plans to avoid damaging relationships."
+    },
+    {
+        "Questions": "Jake is considering applying for a student loan but is unsure which type to choose. What should he consider?",
+        "AnswerChoices": "Pick the loan with the lowest interest rate.^Choose a federal loan if available, as it has more flexible repayment options.^Apply for a private loan to get a larger loan amount.",
+        "AnswerPointValue": "5^10^2",
+        "AnswerExplanation": "Interest rates are crucial, but it\u2019s also important to look at repayment terms, deferment options, and whether the loan is federal or private. Federal loans often offer more protection.^Smart decision! Federal loans are generally more forgiving, offering options like income-driven repayment plans and loan forgiveness for qualifying careers.^Private loans might offer higher loan amounts, but they often come with stricter terms, higher interest rates, and less flexibility. It\u2019s better to start with federal loans before considering private ones."
+    },
+    {
+        "Questions": "Jake sees an auto loan ad for a low-interest rate. What should he do?",
+        "AnswerChoices": "Apply immediately to secure the loan before the rate changes.^Compare this loan with others to ensure it\u2019s the best deal for you.^Ignore the loan for now, you don\u2019t need to borrow for a car.",
+        "AnswerPointValue": "3^10^0",
+        "AnswerExplanation": "While a low interest rate is appealing, it\u2019s essential to evaluate all terms, including the loan amount, length of the loan, and repayment options, before making a decision.^This is the best approach! Comparing auto loans from different lenders ensures you get the best possible deal based on your credit score and needs.^If you can avoid borrowing, it\u2019s better to save up and avoid the debt altogether. Buying a car with cash or a smaller loan reduces your financial burden."
+    },
+    {
+        "Questions": "Jake is considering taking out a payday loan to cover his immediate expenses. What do you do?",
+        "AnswerChoices": "Apply for the payday loan since you need the cash fast.^Look for a personal loan with a lower interest rate and better terms.^Borrow from a friend or family member to avoid taking on high-interest debt.",
+        "AnswerPointValue": "0^10^6",
+        "AnswerExplanation": "Payday loans are short-term loans with extremely high fees and interest rates. It\u2019s usually better to avoid them and find alternative ways to manage short-term cash flow.^A personal loan from a bank or credit union offers better interest rates and repayment terms. Always explore these options before considering payday loans.^Borrowing from friends or family can be a better option, but ensure you have a plan to repay them on time to avoid relationship strain."
+    },
+    {
+        "Questions": "Jake is thinking about applying for a line of credit to start his business. What do you do?",
+        "AnswerChoices": "Apply for a high line of credit to cover all your business expenses.^Use the line of credit responsibly, paying it off regularly to avoid interest charges.^Wait until you have more capital saved up before using a line of credit.",
+        "AnswerPointValue": "5^10^10",
+        "AnswerExplanation": "A high credit limit can be dangerous if you overspend. Apply for a line of credit based on your business's needs and be cautious not to max it out.^This is a great choice! Using the line of credit responsibly and paying it off quickly helps build your credit and ensures you avoid accumulating debt.^This is a wise move. If possible, try to save up capital for your business to avoid relying on credit and the potential debt that comes with it."
+    },
+    {
+        "Questions": "Sophia is looking to borrow money for her first car. What should she do?",
+        "AnswerChoices": "Apply for a payday loan since you need the car now.^Consider an auto loan from a bank or credit union for a better deal.^Save up for a few months and avoid borrowing.",
+        "AnswerPointValue": "0^10^10",
+        "AnswerExplanation": "Payday loans are not a good option for big purchases like a car because of their high interest rates. It\u2019s better to explore other loan options with more reasonable terms.^Banks and credit unions typically offer better interest rates and more flexible repayment plans for auto loans. Compare options before applying.^Saving for a down payment or the full purchase amount reduces the need to borrow and ensures you don\u2019t take on unnecessary debt."
+    },
+    {
+        "Questions": "Sophia needs a loan to pay for her education. What\u2019s the best type of loan to apply for?",
+        "AnswerChoices": "Apply for a payday loan to cover the expense quickly.^Look into federal student loans, which have lower interest rates and more protections.^Apply for a private loan to get more funding for your education.",
+        "AnswerPointValue": "0^10^7",
+        "AnswerExplanation": "Payday loans are short-term, high-interest loans that should not be used for long-term expenses like education. They are expensive and can lead to serious financial problems.^Federal student loans are often the best choice for education expenses because they have lower interest rates, flexible repayment options, and borrower protections.^While private loans can provide extra funds, federal loans typically offer more favorable terms. Consider using federal loans first before turning to private loans."
+    },
+    {
+        "Questions": "Sophia is considering a line of credit for some school-related expenses. What should she do?",
+        "AnswerChoices": "Apply for a high line of credit to cover everything you might need.^Use the credit line sparingly and pay it off monthly to avoid interest charges.^Wait until you have saved up enough money for your expenses.",
+        "AnswerPointValue": "5^10^10",
+        "AnswerExplanation": "It\u2019s important to avoid overextending yourself. Apply for a credit line that matches your actual expenses and be cautious of overspending.^This is a smart move! Using the line of credit responsibly and paying off the balance regularly ensures you avoid accumulating debt and build a positive credit history.^Saving up for expenses is always a good idea. It helps avoid borrowing and accumulating debt."
+    },
+    {
+        "Questions": "Sophia is thinking about borrowing money for a vacation. What do you do?",
+        "AnswerChoices": "Apply for a payday loan to cover the expenses.^Save up for the vacation instead of borrowing.^Use a credit card with a low interest rate for the vacation.",
+        "AnswerPointValue": "0^10^8",
+        "AnswerExplanation": "Payday loans are not recommended for non-essential purchases like vacations. They come with high interest rates and fees.^This is the best approach! Saving for a vacation ensures you can enjoy it without the burden of debt afterward.^If you must borrow, using a credit card with a low interest rate can be a better option. However, make sure you can repay it before the interest rate increases."
+    },
+    {
+        "Questions": "Sophia sees a loan ad with a low-interest rate for a big purchase. What do you do?",
+        "AnswerChoices": "Apply for the loan without researching the terms.^Carefully compare the loan terms to other offers before applying.^Ignore the loan and save up for the purchase instead.",
+        "AnswerPointValue": "0^10^10",
+        "AnswerExplanation": "Applying for a loan without understanding the terms can lead to financial stress. Always research the full loan terms and interest rates before applying.^This is the best option! Comparing loan terms will help you find the best deal and ensure you don\u2019t borrow more than you need.^Saving up is often the best solution. It keeps you from taking on debt and helps you make purchases without financial strain."
+    }
+]

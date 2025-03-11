@@ -1,0 +1,26 @@
+[
+    {
+        "Questions": "You see a store offering a credit card with 20% off your first purchase. What do you do?",
+        "AnswerChoices": "Apply for the card and use it immediately for the discount.^Ask your parents for advice before applying.^Decide to wait until you\u2019ve learned more about credit cards.",
+        "AnswerPointValue": "0^5^10",
+        "AnswerExplanation": "While the discount seems attractive, applying for too many credit cards can hurt your score. Use credit cards wisely to avoid long-term financial consequences.^Consulting an adult can help you understand the terms and potential risks of opening a new credit account. It\u2019s a cautious approach.^Great choice! Waiting allows you to research how credit cards work and how they impact your score before making a decision."
+    },
+    {
+        "Questions": "Your credit card bill arrives, and you don\u2019t have enough to pay it off completely. What do you do?",
+        "AnswerChoices": "Pay only the minimum amount due.^Borrow money from a friend to pay the full amount.^Cut back on other expenses and pay as much as you can.",
+        "AnswerPointValue": "0^5^10",
+        "AnswerExplanation": "Paying the minimum avoids late fees but leads to interest charges, which can pile up over time. Your balance may grow despite your payments.^While this avoids interest, it may strain your friendship. It's important to repay your friend promptly if you choose this option.^Prioritizing your credit card payment minimizes interest charges and protects your credit score. This demonstrates good financial discipline."
+    },
+    {
+        "Questions": "Your credit card company offers to increase your credit limit. What do you do?",
+        "AnswerChoices": "Accept the increase and spend more.^Accept the increase but continue using your card responsibly.^Decline the increase; it\u2019s not necessary.",
+        "AnswerPointValue": "0^10^10",
+        "AnswerExplanation": "Be careful! Increasing your credit limit can lead to overspending, which may hurt your credit score if you can\u2019t pay the balance.^This is a good choice! A higher limit can improve your credit utilization rate, positively impacting your score if you don\u2019t overspend.^If you\u2019re worried about overspending, declining the increase can help you stay on track financially."
+    },
+    {
+        "Questions": "You\u2019ve been pre-approved for a second credit card. What do you do?",
+        "AnswerChoices": "Sign up immediately to have more credit available.^Compare its terms with your current card before deciding.^Decline the offer to focus on managing your first card responsibly.",
+        "AnswerPointValue": "0^7^10",
+        "AnswerExplanation": "Be cautious. Having multiple cards can hurt your credit score if not managed properly. Only open accounts you truly need.^Good idea! Comparing terms like interest rates and fees ensures you make the best choice for your needs.^Great choice for beginners! Focusing on one card helps you build good habits before taking on additional credit."
+    }
+]

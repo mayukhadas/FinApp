@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Literacy Quiz</title>
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: blue;
+            color: white;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: darkblue;
+        }
+    </style>
+    <script>
+        let currentQuestionIndex = 0;
+        let results = [];
+
+        function showQuestion() {
+            const questions = {{ data|tojson }};
+            if (currentQuestionIndex < questions.length) {
+                const question = questions[currentQuestionIndex];
+                document.getElementById('question').innerHTML = `<strong>${question.Questions}</strong>`;
+                const choices = question.AnswerChoices.split('|').map(choice =>
+                    `<label><input type="radio" name="answer" value="${choice}" onclick="showExplanation('${question.AnswerPointValue}', '${question.AnswerExplanation}')"> ${choice}</label><br>`
+                ).join('');
+                document.getElementById('choices').innerHTML = choices;
+            } else {
+                document.getElementById('quiz-container').innerHTML = `
+                    <h2>You have completed the quiz!</h2>
+                    <form action="/" method="get" style="display: inline;">
+                        <button type="submit">Back</button>
+                    </form>
+                `;
+            }
+        }
+
+        function nextQuestion() {
+            const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+            if (selectedAnswer) {
+                const questions = {{ data|tojson }};
+                const question = questions[currentQuestionIndex];
+                results.push({
+                    question: question.Questions,
+                    answer: selectedAnswer.value,
+                    point_value: question.AnswerPointValue,
+                    explanation: question.AnswerExplanation
+                });
+                currentQuestionIndex++;
+                showQuestion();
+            } else {
+                alert('Please select an answer before proceeding.');
+            }
+        }
+
+        function showExplanation(pointValue, explanation) {
+            var explanationElement = document.getElementById('explanation');
+            explanationElement.innerHTML = '<table><tr><td>Points: ' + pointValue + '</td><td>Explanation: ' + explanation + '</td></tr></table>';
+            explanationElement.style.display = 'block';
+        }
+
+        window.onload = showQuestion;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Literacy Quiz</h1>
+        <div id="quiz-container">
+            <div id="question"></div>
+            <div id="choices"></div>
+            <div id="explanation" class="explanation"></div>
+            <div class="button-container">
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

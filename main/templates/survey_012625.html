@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        .container {
+            background-color: #f0f0f0; /* Light gray background for container */
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .quiz-container {
+            background-color: #fff; /* White background for quiz container */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+        }
+        h1, h2 {
+            color: #333; /* Dark gray for headings */
+        }
+        .button-container button {
+            background-color: #007bff; /* Blue background for button */
+            color: #fff; /* White text for button */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #007bff; /* Blue background for table */
+            color: #fff; /* White text for table */
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            white-space: pre-wrap; /* Ensures line breaks within cells */
+        }
+        th {
+            background-color: #0066cc; /* Darker blue for header */
+        }
+        .blue-text {
+            color: #007bff; /* Blue color for score text */
+        }
+        .pre-line {
+        white-space: pre-line; /* Preserve line breaks */
+    }
+    </style>
+    <script>
+        let currentQuestionIndex = 0;
+        let results = [];
+
+        function showQuestion() {
+            const questions = {{ data|tojson }};
+            if (currentQuestionIndex < questions.length) {
+                const question = questions[currentQuestionIndex];
+                document.getElementById('question').innerHTML = `<strong>Question ${currentQuestionIndex + 1}: ${question.Questions}</strong>`;
+                const choices = question.AnswerChoices.split('^'); // Split answer choices using caret (^)
+                const choicesHtml = choices.map((choice, index) =>
+                    `<label><input type="radio" name="answer" value="${choice}" data-index="${index}"> ${choice}</label><br>`
+                ).join('');
+                document.getElementById('choices').innerHTML = choicesHtml;
+                document.getElementById('explanation').style.display = 'none';
+                document.getElementById('score').textContent = ""; // Clear previous score display
+            } else {
+                showFinalResult(); // Call function to display final results
+            }
+        }
+
+        function nextQuestion() {
+            const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+            if (selectedAnswer) {
+                const questions = {{ data|tojson }};
+                const question = questions[currentQuestionIndex];
+                const answerIndex = selectedAnswer.getAttribute('data-index');
+                const pointValue = parseInt(question.AnswerPointValue.split('^')[answerIndex]); // Get point value
+
+                results.push({
+                    question: question.Questions,
+                    answer: selectedAnswer.value,
+                    point_value: pointValue,
+                    explanation: question.AnswerExplanation.split('^')[answerIndex] // Split explanations using caret
+                });
+
+                // Update UI to show score after selecting an answer
+                const explanationElement = document.getElementById('explanation');
+                explanationElement.innerHTML = `<h3 class="blue-text">Your score for this question: ${pointValue} points</h3>` +
+    '<h3>Explanation for all choices:</h3>' +
+    '<table>' +
+    '<tr><th>Choice</th><th>Points</th><th>Explanation</th></tr>';
+for (let i = 0; i < question.AnswerChoices.split('^').length; i++) {
+    explanationElement.innerHTML += `<tr><td style="white-space: pre-wrap;">${question.AnswerChoices.split('^')[i]}</td><td style="white-space: pre-wrap;">${question.AnswerPointValue.split('^')[i]}</td><td style="white-space: pre-wrap;">${question.AnswerExplanation.split('^')[i]}</td></tr>`;
+}
+                explanationElement.innerHTML += '</table>';
+                explanationElement.style.display = 'block';
+
+                currentQuestionIndex++;
+                setTimeout(showQuestion, 6000); // Show next question after 6 seconds
+            } else {
+                alert('Please select an answer before proceeding.');
+            }
+        }
+
+        function showFinalResult() {
+            let totalScore = 0;
+            for (const result of results) {
+                totalScore += parseInt(result.point_value);
+            }
+
+            const answerChoices = results.map(result => result.answer).join(', '); // Join all answer choices
+
+            const quizContainer = document.getElementById('quiz-container');
+            quizContainer.innerHTML = `
+                <h2>You have completed the quiz!</h2>
+                <p>Your total credit score is ${totalScore} points.</p>
+                <!-- <p>Here are the answer choices you selected: ${answerChoices}</p> -->
+                <form action="/" method="get" style="display: inline;">
+                    <button type="submit">Back</button>
+                </form>
+            `;
+        }
+
+        window.onload = showQuestion;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #fff; background-color: #007bff; padding: 10px; border-radius: 5px;">{{ title }}</h1>
+        <div id="quiz-container">
+            <div id="question"></div>
+            <div id="choices"></div>
+            <div id="explanation" class="explanation"></div>
+            <div id="score"></div> <br>
+            <div class="button-container">
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

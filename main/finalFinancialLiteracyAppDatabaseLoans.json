@@ -1,0 +1,26 @@
+[
+    {
+        "Questions": "You\u2019re looking at a student loan offer with a low-interest rate, but it\u2019s from a private lender. What do you do?",
+        "AnswerChoices": "Apply for the loan immediately because the low interest seems like a good deal.^Research federal student loans first, as they offer more protections.^Talk to your parents or a financial advisor about the loan before deciding.",
+        "AnswerPointValue": "6^10^10",
+        "AnswerExplanation": "Private student loans can have variable interest rates, which means your payments could increase over time. Make sure to research the lender and compare their loan terms before applying.^Federal student loans often offer better terms, such as fixed interest rates and flexible repayment options. It's wise to explore federal options before turning to private loans.^Consulting an adult or financial expert is a great idea! They can help you understand the full implications of borrowing from a private lender."
+    },
+    {
+        "Questions": "You need a car for your commute to college, and you\u2019re thinking about applying for an auto loan. What\u2019s your first step?",
+        "AnswerChoices": "Apply for an auto loan right away, you need the car immediately.^Check your credit score and determine what type of loan you can afford.^Save up for a few months before applying for an auto loan.",
+        "AnswerPointValue": "4^10^10",
+        "AnswerExplanation": "While an auto loan might seem urgent, it\u2019s crucial to shop around first. Compare interest rates and terms from different lenders to find the best deal.^Great move! Knowing your credit score and what loans you qualify for will help you avoid applying for loans you can't repay and ensure you're getting a fair rate.^It\u2019s always best to save for a down payment, which will reduce your loan amount and lower your monthly payments. A larger down payment can also help you qualify for a better rate."
+    },
+    {
+        "Questions": "You\u2019re considering a payday loan to cover a small emergency expense, but you\u2019re unsure. What do you do?",
+        "AnswerChoices": "Apply for the payday loan because you need money right now.^Look for other options like borrowing from family or a personal loan with a lower interest rate.^Wait for your paycheck to cover the expense and avoid borrowing.",
+        "AnswerPointValue": "0^7^10",
+        "AnswerExplanation": "Payday loans can be very costly due to high fees and interest rates. If you can avoid them, it\u2019s better to explore alternatives like personal loans from a bank or borrowing from a trusted friend or family member.^This is a much safer option! Personal loans usually offer lower rates than payday loans and have more reasonable repayment terms.^Waiting for your paycheck is a smart decision. Avoiding borrowing helps you keep your financial situation stable without accumulating high-interest debt."
+    },
+    {
+        "Questions": "You\u2019re comparing a student loan from a private lender and a federal student loan. What factors should you consider most?",
+        "AnswerChoices": "The interest rate is the most important factor, so go for the loan with the lowest rate.^Federal student loans might offer better repayment options and protections, so prioritize them.^Focus on how quickly you can pay off the loan.",
+        "AnswerPointValue": "0^10^5",
+        "AnswerExplanation": "While interest rates are important, you should also consider the repayment terms, deferment options, and forgiveness programs available with federal loans. Federal loans often have more favorable terms.^Exactly! Federal student loans typically have fixed interest rates and provide more flexible repayment options, which can be crucial when you're struggling financially after graduation.^While repayment speed is important, the loan\u2019s interest rate and flexibility will affect your ability to pay it off efficiently in the long run."
+    }
+]

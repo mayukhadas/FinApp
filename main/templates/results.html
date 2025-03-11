@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Quiz Results</h1>
+    {% for result in results %}
+        <div>
+            <p><strong>Question:</strong> {{ result['question'] }}</p>
+            <p><strong>Your Answer:</strong> {{ result['answer'] }}</p>
+            <p><strong>Point Value:</strong> {{ result['point_value'] }}</p>
+            <p><strong>Explanation:</strong> {{ result['explanation'] }}</p>
+        </div>
+    {% endfor %}
+    <a href="/">Back to Quiz</a>
+</body>
+</html>

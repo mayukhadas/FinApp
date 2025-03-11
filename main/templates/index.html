@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Literacy App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 50px;
+        }
+        .title {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+            width: 200px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .button-container button:hover ~ button + button,
+        .button-container button:hover + button,
+        .button-container button:hover ~ button + button  {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>WELCOME TO SMARTSPENDER</h2>
+        </div>
+        <h1>Do you want to learn about credit or consumer loans?</h1>
+        <form action="/survey" method="post">
+            <div class="button-container">
+                <button type="submit" name="survey_choice" value="Credit Card">Credit Score</button>
+                <button type="submit" name="survey_choice" value="Loan">Consumer Loans</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
